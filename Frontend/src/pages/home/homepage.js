@@ -54,32 +54,34 @@ export default function HomePage(props){
                 <div class="text-light">
                     <div class="row m-2">
                         <div class="col-4 p-2">
+                                <div class="card bg-dark p-4">
+                                    <img src="/favicon.ico" class="card-img-top" alt="..."/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <h5 class="harga">RP. 45.000</h5>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="col-4 p-2">
                             <div class="card bg-dark p-4">
                             <img src="/favicon.ico" class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="harga">RP. 45.000</h5>
                             </div>
                             </div>
                         </div>
+
                         <div class="col-4 p-2">
-                        <div class="card bg-dark p-4">
+                            <div class="card bg-dark p-4">
                             <img src="/favicon.ico" class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-4 p-2">
-                        <div class="card bg-dark p-4">
-                            <img src="/favicon.ico" class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="harga">RP. 45.000</h5>
                             </div>
                             </div>
                         </div>
@@ -175,7 +177,7 @@ export default function HomePage(props){
 }
 
 export async function getStaticProps(){
-    const res = await fetch('https://jsonplaceholder.typicode.com/photos?limit=5');
+    const res = await fetch('https://jsonplaceholder.typicode.com/photos');
     const dataPost = await res.json();
     return{
         props:{
