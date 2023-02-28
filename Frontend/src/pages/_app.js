@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@/styles/globals.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/Register.css'
 import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {

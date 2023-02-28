@@ -2,100 +2,48 @@ import { Layouts } from "../Layouts/Layouts"
 
 export const Footer = () =>{
     return (
-        <footer class="footer_section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-3 footer_col">
-              <div class="footer_contact">
-                <h4>
-                  Reach at..
-                </h4>
-                <div class="contact_link_box">
-                  <a href="">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>
-                      Location
-                    </span>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <span>
-                      Call +01 1234567890
-                    </span>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <span>
-                      demo@gmail.com
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="footer_social">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
+      <div class="container">
+        <div class="footer d-flex justify-content-center">
 
-            <div class="col-md-6 col-lg-3 footer_col">
-              <div class="footer_detail">
-                <h4>
-                  About
-                </h4>
-                <p>
-                  Beatae provident nobis mollitia magnam voluptatum, unde dicta facilis minima veniam corporis laudantium alias tenetur eveniet illum reprehenderit fugit a delectus officiis blanditiis ea.
-                </p>
+          <div class="card text-center  m-2">
+              <div class="card-header">1 Month</div>
+              <div class="card-body m-2">
+                <h2 class="card-title">Rp. 40.000,-</h2>
+                <p class="card-text">Rp. 59.000,-</p>
+                <a href="#" class="btn btn-primary">Subscribe</a>
               </div>
-            </div>
-
-            <div class="col-md-6 col-lg-2 mx-auto footer_col">
-              <div class="footer_link_box">
-                <h4>
-                  Links
-                </h4>
-                <div class="footer_links">
-                  <a class="active" href="index.html">
-                    Home
-                  </a>
-                  <a class="" href="about.html">
-                    About
-                  </a>
-                  <a class="" href="departments.html">
-                    Departments
-                  </a>
-                  <a class="" href="doctors.html">
-                    Doctors
-                  </a>
-                  <a class="" href="contact.html">
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 footer_col ">
-              <h4>
-                Newsletter
-              </h4>
-              <form action="#">
-                <input type="email" placeholder="Enter email" />
-                <button type="submit">
-                  Subscribe
-                </button>
-              </form>
-            </div>
+              <div class="card-footer text-muted">2 days ago</div>
           </div>
+
+          <div class="card text-center m-2">
+              <div class="card-header">6 Month</div>
+              <div class="card-body">
+                <h2 class="card-title">Rp. 240.000,-</h2>
+                <p class="card-text">Rp. 299.000,-</p>
+                <a href="#" class="btn btn-primary">Subscribe</a>
+              </div>
+              <div class="card-footer text-muted">2 days ago</div>
+          </div>
+
+          <div class="card text-center m-2">
+              <div class="card-header">1 Years</div>
+              <div class="card-body">
+                <h2 class="card-title">Rp. 480.000,-</h2>
+                <p class="card-text">Rp. 649.000,-</p>
+                <a href="#" class="btn btn-primary">Subscribe</a>
+              </div>
+              <div class="card-footer text-muted">2 days ago</div>
+          </div>
+
         </div>
-      </footer>
+
+            <div  class="card w-100">
+              <div class="d-flex justify-content-center">
+                <h6>Contact Us : </h6>
+                <a href="www.facebook.com"><i class="bi bi-facebook"></i></a>
+                <a href="www.gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+              </div>
+            </div>
+      </div>
     )
 } 

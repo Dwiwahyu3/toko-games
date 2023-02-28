@@ -3,3 +3,13 @@
     background-size: cover;
     background-position: center;
 }
+
+.card{
+    background-color: #353535;
+    color: white;
+}
+
+.icon{
+    color: white;
+}
+

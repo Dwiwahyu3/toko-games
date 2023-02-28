@@ -1,5 +1,6 @@
 import { Layouts, Footer, Navbar } from "@/components"
 
+
 export default function HomePage(props){
     const {dataPost} = props;
     console.log(dataPost);
@@ -33,57 +34,51 @@ export default function HomePage(props){
                 </div>
                 {/* end carousel */}
 
+                {/* game produk */}
                 <div class="Row text-light p-3 d-flex">
                     {dataPost.map((item)=>{
                         return(
                         <div class="col md-3 m-1">
-                        <div class="card bg-dark" style={{"width": "18rem;"}}>
-                        <img src={item.thumbnailUrl} class="card-img-top p-4" alt="..."/>
+                        <div class="card" style={{"width": "18rem;"}}>
+                        <img src={item.thumbnailUrl} class="card-img-top" alt="..."/>
                         <div class="card-body">
                             <h5 class="card-title">{item.title}</h5>
-                            <a href={item.url} class="btn btn-danger d-flex justify-content-center">Buy</a>
+                            <a href={item.url} class="btn btn-danger d-flex justify-content-center"><i class="bi bi-bag-check-fill"></i>Buy</a>
                         </div>
                         </div>
                     </div>
                     );
                     })}
                 </div>
+                {/* end produk */}
 
 
                 {/* advertised */}
-                <div class="text-light">
-                    <div class="row m-2">
-                        <div class="col-4 p-2">
-                                <div class="card bg-dark p-4">
-                                    <img src="/favicon.ico" class="card-img-top" alt="..."/>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <h5 class="harga">RP. 45.000</h5>
-                                        </div>
-                                </div>
+                <div class="advertised d-flex justify-content-center">
+                    <div class="card m-2">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#!" class="btn btn-primary">Button</a>
                         </div>
+                    </div>
 
-                        <div class="col-4 p-2">
-                            <div class="card bg-dark p-4">
-                            <img src="/favicon.ico" class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <h5 class="harga">RP. 45.000</h5>
-                            </div>
-                            </div>
+                    <div class="card m-2">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#!" class="btn btn-primary">Button</a>
                         </div>
+                    </div>
 
-                        <div class="col-4 p-2">
-                            <div class="card bg-dark p-4">
-                            <img src="/favicon.ico" class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <h5 class="harga">RP. 45.000</h5>
-                            </div>
-                            </div>
+                    <div class="card m-2">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#!" class="btn btn-primary">Button</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +91,7 @@ export default function HomePage(props){
                             <div class="d-flex justify-content-center">
                                 <h3>Top Seller</h3>
                             </div>
-                            <div class="card bg-dark">
+                            <div class="card">
                                 <div class="row">
                                     <div class="col md-3 m-2">
                                         <img src="/carousel3.jpg" class="card-img-top" alt="..."/>
@@ -106,7 +101,7 @@ export default function HomePage(props){
                                     </div>
                                 </div>
                             </div> 
-                            <div class="card bg-dark">
+                            <div class="card">
                                 <div class="row">
                                     <div class="col md-3 m-2">
                                         <img src="/carousel3.jpg" class="card-img-top" alt="..."/>
@@ -121,7 +116,7 @@ export default function HomePage(props){
                             <div class="d-flex justify-content-center">
                                 <h3>Top Seller</h3>
                             </div>
-                            <div class="card bg-dark">
+                            <div class="card">
                                 <div class="row">
                                     <div class="col md-3 m-2">
                                         <img src="/carousel3.jpg" class="card-img-top" alt="..."/>
@@ -131,7 +126,7 @@ export default function HomePage(props){
                                     </div>
                                 </div>
                             </div>   
-                            <div class="card bg-dark">
+                            <div class="card">
                                 <div class="row">
                                     <div class="col md-3 m-2">
                                         <img src="/carousel3.jpg" class="card-img-top" alt="..."/>
@@ -146,7 +141,7 @@ export default function HomePage(props){
                             <div class="d-flex justify-content-center">
                                 <h3>Top Seller</h3>
                             </div>
-                            <div class="card bg-dark">
+                            <div class="card">
                                 <div class="row">
                                     <div class="col md-3 m-2">
                                         <img src="/carousel3.jpg" class="card-img-top" alt="..."/>
@@ -156,7 +151,7 @@ export default function HomePage(props){
                                     </div>
                                 </div>
                             </div> 
-                            <div class="card bg-dark">
+                            <div class="card">
                                 <div class="row">
                                     <div class="col md-3 m-2">
                                         <img src="/carousel3.jpg" class="card-img-top" alt="..."/>
@@ -172,12 +167,13 @@ export default function HomePage(props){
                 {/* end category */}
                 
             </div>
+            <Footer/>
         </Layouts>
     )
 }
 
 export async function getStaticProps(){
-    const res = await fetch('https://jsonplaceholder.typicode.com/photos');
+    const res = await fetch('https://jsonplaceholder.typicode.com/photos?limit=5');
     const dataPost = await res.json();
     return{
         props:{
