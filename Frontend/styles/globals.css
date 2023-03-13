@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --background-color-navbar: rgba(0, 0, 0, 0.4);;
+  --background-color-body: #000000;
+
+  --font-family: 'Inter', sans-serif;
+
+  --color-default: #FFFFFF;
+
+  --link: #FFFFFF;
+  --link-active: #E30813;
+  --link-active-prem: #FFCD29;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color-body);
+  color: var(--color-default);
+}
+
+.row {
+  width: 100%;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.bg-dark {
+  background-color: var(--background-color-navbar) !important;
+}
+
+.nav-link {
+  color: var(--link);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  color: var(--link-active);
+}
+
+.flex-grow-1 {
+  border-top: 1px solid #333333
+}

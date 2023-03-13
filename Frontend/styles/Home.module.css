@@ -1,0 +1,114 @@
+.jumbotron {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.jumbotron>img {
+  width: 100%;
+  height: auto;
+}
+
+.jumbotron>.box_jumbotron {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.jumbotron>.box_jumbotron>.title {
+  width: 30%;
+}
+
+.jumbotron>.box_jumbotron>.title>img {
+  width: 100%;
+}
+
+.jumbotron>.box_jumbotron>.desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  width: 55%;
+}
+
+.jumbotron>.box_jumbotron>.btn {
+  background-color: #E30813;
+  padding: 16px 32px;
+  color: #FFFFFF;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+}
+
+.jumbotron>.box_jumbotron>.btn:focus {
+  outline: none;
+  border: none;
+}
+
+.main_sale>h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.product_sale {
+  min-width: 214px;
+  height: 280px;
+}
+
+.product_sale>img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 12px;
+}
+
+.product_sale>.title>h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 12px;
+}
+
+.product_sale>.name>h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.product_sale>.price>.badge {
+  padding: 4px 10px;
+  background-color: #E20813;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+
+.product_sale>.price>.discount>span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: line-through;
+  color: #999999;
+}
+
+.product_sale>.price>.discount>h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
